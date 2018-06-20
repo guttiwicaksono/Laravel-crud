@@ -36,7 +36,7 @@
           <div class="row">
           <div class="col-md-4"></div>
           <div class="form-group col-md-4">
-            <strong>Date Published: </strong>  
+            <strong>Date Published :</strong>  
             <input class="date form-control"  type="text" id="datepicker" name="date_published" value="{{$date}}">   
          </div>
         </div>
