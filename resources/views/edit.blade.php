@@ -26,7 +26,7 @@
         <div class="row">
           <div class="col-md-4"></div>
             <div class="form-group col-md-4">
-              <label for="email">Author</label>
+              <label for="email">Author :</label>
               <input type="text" class="form-control" name="author" value="{{$book->author}}">
             </div>
           </div>
