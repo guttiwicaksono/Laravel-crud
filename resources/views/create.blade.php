@@ -12,20 +12,20 @@
   </head>
   <body>
     <div class="container">
-      <h2>Book</h2><br/>
+      <h2>Create Book</h2><br/>
       <form method="post" action="{{url('books')}}" enctype="multipart/form-data">
         @csrf
         <div class="row">
           <div class="col-md-4"></div>
           <div class="form-group col-md-4">
-            <label for="Name">Title:</label>
+            <label for="Name">Title :</label>
             <input type="text" class="form-control" name="title" required="">
           </div>
         </div>
         <div class="row">
           <div class="col-md-4"></div>
             <div class="form-group col-md-4">
-              <label for="Name">Author</label>
+              <label for="Name">Author :</label>
               <input type="text" class="form-control" name="author" required="">
             </div>
         </div>
@@ -33,7 +33,7 @@
         <div class="row">
           <div class="col-md-4"></div>
           <div class="form-group col-md-4">
-            <strong>Date Published: </strong>  
+            <strong>Date Published : </strong>  
             <input class="date form-control"  type="text" id="datepicker" name="date_published">   
          </div>
         </div>
