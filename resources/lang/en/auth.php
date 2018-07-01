@@ -13,7 +13,9 @@ return [
     |
     */
 
-    'failed' => 'These credentials do not match our records.',
+    'failed' => 'These :attribute credentials do not match our records.',
     'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
+    'no_kk' => 'No. Kartu Keluarga Anda Tidak Sesuai',
+    'password' => 'Password anda salah',
 
 ];

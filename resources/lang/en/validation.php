@@ -88,6 +88,7 @@ return [
         'string'  => 'The :attribute must be at least :min characters.',
         'array'   => 'The :attribute must have at least :min items.',
     ],
+    'no_kk'                => 'No. Kartu Keluarga tidak sesuai',
     'not_in'               => 'The selected :attribute is invalid.',
     'not_regex'            => 'The :attribute format is invalid.',
     'numeric'              => 'The :attribute must be a number.',
@@ -141,6 +142,8 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => array(
+        'no_kk' => 'No. Kartu Keluarga',
+    ),
 
 ];
