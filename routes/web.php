@@ -12,10 +12,21 @@
 */
 
 Route::get('/', function () {
-    return view('auth/register');
+    return view('auth/login');
 });
 Route::resource('books','BookController');
 
 Auth::routes();
 
+Route::get('/form', function () {
+    return view('form');
+});
+
+Route::get('/pdf', function () {
+    return view('pdf');
+});
+
 Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/submitForm','UserDetailController@store');
+Route::get('/index_user','UserDetailController@indexUser');
+Route::get('/downloadPDF/{id}','UserDetailController@downloadPDF');
