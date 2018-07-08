@@ -11,16 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('auth/login');
-});
+Route::get('/', 'HomeController@index')->name('home');
 Route::resource('books','BookController');
 
 Auth::routes();
 
-Route::get('/form', function () {
-    return view('form');
-});
+Route::get('/form','UserDetailController@form');
 
 Route::get('/pdf', function () {
     return view('pdf');
